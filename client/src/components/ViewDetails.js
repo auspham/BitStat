@@ -183,9 +183,9 @@ export class ViewDetails extends Component {
     }
 
     componentWillMount() {
-
-
-        fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=0")
+        
+        var apilink = "https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api"
+        fetch(apilink + "?beforeday=0")
         .then(res=>res.json())
         .then(result => this.setState({
             load1: false,
@@ -201,7 +201,7 @@ export class ViewDetails extends Component {
 
 
 
-        fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=0")
+        fetch(apilink + "?beforehour=0")
         .then(res=>res.json())
         .then(result => this.setState({
             load2: false,
@@ -216,7 +216,7 @@ export class ViewDetails extends Component {
         });
 
 
-        fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?weekly=0")
+        fetch(apilink + "?weekly=0")
         .then(res=>res.json())
         .then(result => this.setState({
             load1: false,
@@ -236,7 +236,7 @@ export class ViewDetails extends Component {
         this.setState({
             load2: true,
         })
-        fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=" + value)
+        fetch(apilink + "?beforehour=" + value)
         .then(res => res.json())
         .then(result => {
             console.log("result");
@@ -261,7 +261,7 @@ export class ViewDetails extends Component {
         this.setState({
             load1: true,
         })
-        fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=" + value)
+        fetch(apilink + "?beforeday=" + value)
         .then(res => res.json())
         .then(result => {
             console.log("result");
