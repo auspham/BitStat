@@ -20,6 +20,6 @@ The other virtual machine will then read the data from Google Cloud Storage then
 <code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Google Bigquery</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>
 
 ## Team
-- Austin Pham @rockmanvnx6
-- Yong Jia Jun @yongjiajun
-- Wei wei Wen @weiweiwen
+- Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6)
+- Yong Jia Jun [@yongjiajun](https://github.com/yongjiajun)
+- Wei wei Wen [@weiweiwen](https://github.com/weiweiwen)
