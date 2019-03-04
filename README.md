@@ -5,7 +5,7 @@
 <p align="center">
 <img src="https://img.shields.io/badge/%E2%9C%94%20Code%20Quality-A-green.svg">
 <img src="https://img.shields.io/badge/Mobile%20Compatibility-A-red.svg">
-<img src="https://img.shields.io/badge/license-MIT-blue.svg">
+<img src="https://img.shields.io/badge/License-MIT-blue.svg">
 </p>
 
 ## Description
