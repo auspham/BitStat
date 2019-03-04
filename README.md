@@ -35,7 +35,7 @@ cd client && npm run build && npm run start
 <hr />
 
 ## Technolgy
-<code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Google Bigquery</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>
+<code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Google Bigquery</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>, `Google Lambda Function`
 
 ## Team
 - Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6)
