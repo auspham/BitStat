@@ -1,0 +1,112 @@
+@keyframes play180 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -4320px 0px;
+    }
+  }
+
+  @keyframes reverse180 {
+    0% {
+        background-position: -4320px 0px;
+      }
+      100% {
+        background-position: 0px 0px;
+      }
+  }
+
+  
+.barchart-logo{
+    background: url(../stylesheet/img/sprite_60fps.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-timing-function: steps(180);
+    animation-name: reverse180;
+    margin-top: 15px;
+    float: right;
+}
+
+.menu nav{
+    background: #474787;
+}
+
+.menu nav button.navbar-toggler .navbar-toggler-icon {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.menu nav button.navbar-toggler{
+    border: none;
+    position: absolute;
+    top:21.5px;
+}
+.menu nav button.navbar-toggler:focus{
+    outline: none;
+}
+.menu nav button.navbar-toggler:hover .navbar-toggler-icon {
+    transform: rotate(270deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu nav div.brand a span.logo{
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.menu nav div.right-h a{
+    margin-left: 15px;
+}
+
+.menu nav div.right-h a:last-child{
+    margin-right: 60px;
+}
+
+.menu nav div.brand a{
+    color: #fff;
+}
+
+.menu nav a {
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+
+}
+.menu nav a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.menu nav a span.logo{
+    margin-top: 8px;
+    position: absolute;
+    margin-left: -4px;
+}
+.menu nav div.brand {
+    position: relative;
+    width: 140px;
+    padding: 5px 0 15px;
+}
+.menu nav div.brand::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.menu nav div.brand a:hover .barchart-logo{
+    animation-name: play180;
+}
+a.github-corner svg{
+    z-index:2;
+    position:fixed;
+}
+
+
+@media (max-width: 992px) { 
+    .menu nav div.brand{
+        margin: 0 auto;
+    }
+}
