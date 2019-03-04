@@ -1,0 +1,9 @@
+.banner-chart{
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: -1%;
+    bottom: -9%;
+    z-index: 1;
+    opacity: 0.6;
+}

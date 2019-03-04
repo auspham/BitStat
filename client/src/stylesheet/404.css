@@ -1,0 +1,59 @@
+.c404-fluid h1 {
+    font-size: 3.5em;
+    color: #2c2c54;
+}
+.c404-fluid h4{
+    margin-bottom: 20px;
+    color: #40407a;
+}
+.c404-fluid{
+    margin-top: 150px!important;
+}
+.lost {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: auto auto;
+    width:50vw;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .lost .cell{
+    width: 25vw;
+    height:25vw;
+    background:white;
+    border:3px solid #474787;
+    position:relative;
+    max-width:300px;
+    max-height: 300px;
+  }
+  
+  .lost .cell .col{
+    background: #40407a;
+    margin-left:30%;
+    width:10%;
+    max-width:20px;
+    height:50%;
+    bottom: 0;
+    position: absolute;
+  }
+  .lost .cell .col:nth-child(2) {
+      margin-left:60%;
+  
+  }
+  
+  .lost .cell:last-child .col:nth-child(2) {
+    bottom: 0;
+    height: 5vw;
+    max-height: 25px;
+    width:40%;
+    margin-left: 55%;
+    max-width:100px;
+  }
+  .lost .cell:nth-child(3), .cell:nth-child(4) {
+        border-top:0;
+  }
+
+  .lost .cell:nth-child(2), .cell:nth-child(4) {
+      border-left:0;
+  }

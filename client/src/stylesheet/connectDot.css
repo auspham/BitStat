@@ -1,0 +1,10 @@
+.connectDot{
+    position: absolute;
+    left: -1%;
+    width: 100%;
+    bottom: -9%;
+    height: 120%;
+    z-index: 1;
+    background: rgba(0,0,0,0.1);
+    display:block;
+}
