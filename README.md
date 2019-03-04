@@ -2,11 +2,11 @@
 <h1 align="center">
   The Ultimate Open Source Bitcoin Visualisation
 </h1>
-<center>
+<p align="center">
 
 ![](https://img.shields.io/badge/%E2%9C%94%20Code%20Quality-A-green.svg) ![](https://img.shields.io/badge/Mobile%20Compatibility-A-red.svg)
 ![](https://img.shields.io/badge/lisence-MIT-blue.svg)
-</center>
+</p>
 
 ## Description
 BitStat is a site that visualises Bitcoin currency info and does currency exchange from Bitcoin (BTC) to selected currencies.
