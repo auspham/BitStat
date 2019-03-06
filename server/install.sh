@@ -21,7 +21,6 @@ sed -i $replacestr upload_weekly_json_files_to_google.py
 sed -i $replacestr upload_daily_json_files_to_google.py
 sed -i $replacestr upload_15mins_before_json_files_to_google.py
 
-
 echo "Replacing working directory in scripts..."
 replacedir="s/REPLACE/$workdir/g"
 replacepythondir="s/PYTHON/$pythonwhr/g"
@@ -35,7 +34,6 @@ sed -i  $replacedir upload_files_to_google_weekly.sh
 sed -i  $replacepythondir upload_files_to_google_weekly.sh
 sed -i  $replacedir crontab.txt
 sed -i  $replacepythondir crontab.txt
-
 
 echo "Fixing CORS on Google Cloud Storage..."
 echo ""
@@ -63,7 +61,6 @@ mkdir weekly_json_file_backup
 echo "Configuring API script for Google Cloud Function with specified bucket name..."
 replacefunc="s/REPLACE/$bucketname/g"
 sed -i  $replacefunc cloudfunction.py
-
 
 echo "Successfully configured BitStat Server!"
 echo "Please follow README.md to configure API on Google Cloud Function."
