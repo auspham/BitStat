@@ -69,7 +69,7 @@ mkdir weekly_json_file_backup
 
 echo "Configuring API script for Google Cloud Function with specified bucket name..."
 replacefunc="s/REPLACE/$bucketname/g"
-sed -i -e $replacedir cloudfunction.py
+sed -i -e $replacefunc cloudfunction.py
 rm cloudfunction.py-e
 
 echo "Successfully configured BitStat Server!"
