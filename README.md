@@ -25,21 +25,13 @@ The other virtual machine will then read the data from Google Cloud Storage then
 git clone https://github.com/rockmanvnx6/BitStat.git
 ```
 
-**Build client side**
-
-```bash
-cd client && npm run build && npm run start
-```
-
-> By default, the app will run at *http://0.0.0.0:8080*
-
 **Build server side**
 
 1. Install and configure [gsutil](https://cloud.google.com/storage/docs/gsutil_install) and [Python3](https://docs.python-guide.org/starting/install3/linux/).
 
 2. Make sure that a bucket dedicated for this project is created on Google Cloud using [Cloud Storage](https://console.cloud.google.com/storage/).
 
-3. [Install Google Cloud Storage client library , set up authentication and set the environment variable *GOOGLE_APPLICATION_CREDENTIALS* to the JSON file downloaded.](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-python)
+3. Install Google Cloud Storage client library , set up authentication and set the environment variable *GOOGLE_APPLICATION_CREDENTIALS* to the JSON file downloaded by using [this guide](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-python).
 
 4. Navigate to *server/* and run the the installer:
 
@@ -57,9 +49,17 @@ cd client && npm run build && npm run start
 
 4. Navigate to *client/* and run the the client side API configurator:
 
-5. ```bash
-   chmod u+x apiconfig.sh && ./install.sh
+   ```bash
+   chmod u+x apiconfig.sh && ./apiconfig.sh
    ```
+
+**Build client side**
+
+```bash
+cd client && npm run build && npm run start
+```
+
+> By default, the app will run at *http://0.0.0.0:8080*
 
 <hr />
 
