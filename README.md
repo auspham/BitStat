@@ -36,7 +36,7 @@ git clone https://github.com/rockmanvnx6/BitStat.git
 4. Navigate to *server/* and run the the installer:
 
 5. ```bash
-   chmod u+x install.sh && sudo./install.sh
+   chmod u+x install.sh && sudo ./install.sh
    ```
 
 **Build API**
