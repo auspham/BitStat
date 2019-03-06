@@ -26,11 +26,33 @@ git clone https://github.com/rockmanvnx6/BitStat.git
 ```
 
 **Build client side**
+
 ```bash
 cd client && npm run build && npm run start
 ```
 
 > By default, the app will run at *http://0.0.0.0:8080*
+
+**Build server side**
+
+1. Install and configure [gsutil](https://cloud.google.com/storage/docs/gsutil_install) and [Python3](https://docs.python-guide.org/starting/install3/linux/).
+
+2. Make sure that a bucket dedicated for this project is created on Google Cloud using [Cloud Storage](https://console.cloud.google.com/storage/).
+
+3. [Install Google Cloud Storage client library , set up authentication and set the environment variable *GOOGLE_APPLICATION_CREDENTIALS* to the JSON file downloaded.](https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-python)
+
+4. Navigate to *server/* and run the the installer:
+
+5. ```bash
+   chmod u+x install.sh && sudo./install.sh
+   ```
+
+**Build API**
+
+1. Create a function on [Google Cloud Function](https://console.cloud.google.com/functions) using Python 3.7 as runtime.
+2. Navigate to *server/*, then copy and paste the code from *cloudfunction.py* into the function *main.py* and everything from *cloudfunction_requirements.txt* in the folder into *requirements.txt* on the function.
+3. Deploy!
+4. Configure client side to work with the created function/API. Enjoy!
 
 <hr />
 

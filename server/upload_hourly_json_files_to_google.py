@@ -11,7 +11,7 @@ import glob
 import shutil
 
 path = os.listdir('./')
-bucket_name = 'cloud_computing_assign2_bucket_1'
+bucket_name = 'REPLACE'
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucket_name)
 
@@ -28,13 +28,12 @@ if os.path.isfile('bitcoin_4_in_1.csv'):
 
 files = glob.glob('hourly_json_file_*.json')
 for file in files:
-  if file != 'cloud-computing-assignment2-e691975434d0.json':
-    source_file_name = file
-    destination_blob_name = file
-    blob = bucket.blob(destination_blob_name)
-    blob.upload_from_filename(source_file_name)
-    print('File {} uploaded to {}.'.format(source_file_name,destination_blob_name))
-    
-    src = source + file
-    dst = destin + file
-    shutil.move(src,dst)
+  source_file_name = file
+  destination_blob_name = file
+  blob = bucket.blob(destination_blob_name)
+  blob.upload_from_filename(source_file_name)
+  print('File {} uploaded to {}.'.format(source_file_name,destination_blob_name))
+  
+  src = source + file
+  dst = destin + file
+  shutil.move(src,dst)

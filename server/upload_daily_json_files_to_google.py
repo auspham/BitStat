@@ -12,7 +12,7 @@ import pandas as pd
 import shutil
 
 path = os.listdir('./')
-bucket_name = 'cloud_computing_assign2_bucket_1'
+bucket_name = 'REPLACE'
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucket_name)
 
