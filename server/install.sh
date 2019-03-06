@@ -18,10 +18,8 @@ echo "Replacing bucket name in scripts..."
 replacestr="s/REPLACE/$bucketname/g"
 sed -i $replacestr upload_hourly_json_files_to_google.py
 sed -i $replacestr upload_weekly_json_files_to_google.py
-
-sed -i -e $replacestr upload_daily_json_files_to_google.py
-
-sed -i -e $replacestr upload_15mins_before_json_files_to_google.py
+sed -i $replacestr upload_daily_json_files_to_google.py
+sed -i $replacestr upload_15mins_before_json_files_to_google.py
 
 
 echo "Replacing working directory in scripts..."
@@ -33,10 +31,8 @@ sed -i $replacedir upload_files_to_google_hourly.sh
 sed -i $replacepythondir upload_files_to_google_hourly.sh
 sed -i  $replacedir upload_files_to_google_last15.sh
 sed -i  $replacepythondir upload_files_to_google_last15.sh
-
 sed -i  $replacedir upload_files_to_google_weekly.sh
 sed -i  $replacepythondir upload_files_to_google_weekly.sh
-
 sed -i  $replacedir crontab.txt
 sed -i  $replacepythondir crontab.txt
 
