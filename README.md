@@ -50,9 +50,16 @@ cd client && npm run build && npm run start
 **Build API**
 
 1. Create a function on [Google Cloud Function](https://console.cloud.google.com/functions) using Python 3.7 as runtime.
+
 2. Navigate to *server/*, then copy and paste the code from *cloudfunction.py* into the function *main.py* and everything from *cloudfunction_requirements.txt* in the folder into *requirements.txt* on the function.
+
 3. Deploy!
-4. Replace `/client/src/components/ViewDetails.js:187` with your API.
+
+4. Navigate to *client/* and run the the client side API configurator:
+
+5. ```bash
+   chmod u+x apiconfig.sh && ./install.sh
+   ```
 
 <hr />
 
