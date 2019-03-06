@@ -39,5 +39,5 @@ cd client && npm run build && npm run start
 
 ## Team
 - Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6)
-- Yong Jia Jun [@yongjiajun](https://github.com/yongjiajun)
-- Wei wei Wen [@weiweiwen](https://github.com/weiweiwen)
+- Jia Jun Yong [@yongjiajun](https://github.com/yongjiajun)
+- Wei Wei Wen [@weiweiwen](https://github.com/weiweiwen)
