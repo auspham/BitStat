@@ -55,8 +55,10 @@ git clone https://github.com/rockmanvnx6/BitStat.git
 
 **Build client side**
 
+Make sure that you're in *client/* and run the following code:
+
 ```bash
-cd client && npm run build && npm run start
+npm run build && npm run start
 ```
 
 > By default, the app will run at *http://0.0.0.0:8080*
