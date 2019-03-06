@@ -27,7 +27,7 @@ git clone https://github.com/rockmanvnx6/BitStat.git
 
 **Build server side**
 
-1. Install and configure [gsutil](https://cloud.google.com/storage/docs/gsutil_install) and [Python3](https://docs.python-guide.org/starting/install3/linux/).
+1. Install and configure [gsutil](https://cloud.google.com/storage/docs/gsutil_install), [Python3](https://docs.python-guide.org/starting/install3/linux/) and [cron](https://www.rosehosting.com/blog/ubuntu-crontab/).
 
 2. Make sure that a bucket dedicated for this project is created on Google Cloud using [Cloud Storage](https://console.cloud.google.com/storage/).
 
