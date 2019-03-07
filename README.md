@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-# BitStat
-<h1 align="center">
-  The Ultimate Open Source Bitcoin Visualisation
-=======
 <h1 align="center">
 BitStat
 </h1>
 
 <h1 align="center">
   The Ultimate Open Source BitCoin Conversion Rates Timeline Visualisation
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 </h1>
 <p align="center">
 <img src="https://img.shields.io/badge/%E2%9C%94%20Code%20Quality-A-green.svg">
@@ -17,17 +11,6 @@ BitStat
 <img src="https://img.shields.io/badge/License-MIT-blue.svg">
 </p>
 
-<<<<<<< HEAD
-## Description
-
-BitStat is a site that visualises Bitcoin currency info and does currency exchange from Bitcoin (BTC) to selected currencies.
-
-Data will be collected from Blockchain.com's API. To achieve the main features, 2 instances of virtual machines will be needed. One will collect the required data from the Blockchain API periodically using scripts (Bash and Python) and store the data on the Google Cloud Storage.
-
-The other virtual machine will then read the data from Google Cloud Storage then process it and make it into CSV so that data can be stored using DynamoDB. Google App Engine will be used to host the website, data will be visualised with graphs and charts.
-<hr />
-
-=======
 
 ## Description
 
@@ -74,7 +57,6 @@ On the left side of the diagram, we see that the VM deployed on **Amazon EC2** f
 
 On the right side of the diagram, it can be clearly seen that the BitStat website is deployed on **Google App Engine**. When user visits the website, it will communicate with the custom API built on **Google Cloud Function**, requesting for specified data. The custom API executes appropriate instructions to fetch data from our own **Storage Bucket** on **Google Cloud Storage** and returns appropriate **blob URL to the API**. The API then again **returns a JSON file** for the data requested to proceed on data visualisation on the website. 
 
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 ## Installation
 
 **Clone the project:**
@@ -83,11 +65,6 @@ On the right side of the diagram, it can be clearly seen that the BitStat websit
 git clone https://github.com/rockmanvnx6/BitStat.git
 ```
 
-<<<<<<< HEAD
-**Build client side**
-```bash
-cd client && npm run build && npm run start
-=======
 **Configuring the server side:**
 
 1. Install and configure [gsutil](https://cloud.google.com/storage/docs/gsutil_install), [Python3](https://docs.python-guide.org/starting/install3/linux/) and [cron](https://www.rosehosting.com/blog/ubuntu-crontab/).
@@ -124,22 +101,13 @@ Make sure that you're in *client/* and run the following code:
 
 ```bash
 npm run build && npm run start
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 ```
 
 > By default, the app will run at *http://0.0.0.0:8080*
 
 <hr />
 
-<<<<<<< HEAD
-## Technolgy
-<code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Google Bigquery</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>, `Google Lambda Function`
 
-## Team
-- Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6)
-- Yong Jia Jun [@yongjiajun](https://github.com/yongjiajun)
-- Wei wei Wen [@weiweiwen](https://github.com/weiweiwen)
-=======
 ## Technologies
 <code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Amazon EC2</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>, `Google Cloud Function`, <code>crontab</code>, <code>JSON</code>
 
@@ -147,4 +115,3 @@ npm run build && npm run start
 - Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6) - For front-end/client
 - Jia Jun Yong [@yongjiajun](https://github.com/yongjiajun) - For API/back-end
 - Wei Wei Wen [@weiweiwen](https://github.com/weiweiwen) - For back-end
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
