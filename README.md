@@ -1,4 +1,7 @@
-# BitStat
+<h1 align="center">
+BitStat
+</h1>
+
 <h1 align="center">
   The Ultimate Open Source BitCoin Conversion Rates Timeline Visualisation
 </h1>
