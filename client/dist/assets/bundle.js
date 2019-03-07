@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "assets";
+/******/ 	__webpack_require__.p = "assets/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 310);
@@ -45701,7 +45701,8 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
         value: function componentWillMount() {
             var _this3 = this;
 
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=0").then(function (res) {
+            var apilink = "https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api";
+            fetch(apilink + "?beforeday=0").then(function (res) {
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45716,7 +45717,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
                 console.log(error);
             });
 
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=0").then(function (res) {
+            fetch(apilink + "?beforehour=0").then(function (res) {
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45731,7 +45732,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
                 console.log(error);
             });
 
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?weekly=0").then(function (res) {
+            fetch(apilink + "?weekly=0").then(function (res) {
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45755,7 +45756,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
             this.setState({
                 load2: true
             });
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=" + value).then(function (res) {
+            fetch(apilink + "?beforehour=" + value).then(function (res) {
                 return res.json();
             }).then(function (result) {
                 console.log("result");
@@ -45781,7 +45782,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
             this.setState({
                 load1: true
             });
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=" + value).then(function (res) {
+            fetch(apilink + "?beforeday=" + value).then(function (res) {
                 return res.json();
             }).then(function (result) {
                 console.log("result");
@@ -80119,55 +80120,55 @@ exports.push([module.i, "[data-sal]{-webkit-transition-delay:0s;transition-delay
 /* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e1bc50542543d9f1ae343a786293000a.jpeg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/16440123.jpeg";
 
 /***/ }),
 /* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "67ca8b463f187e64d5fe4c37108599e4.png";
+module.exports = __webpack_require__.p + "src/stylesheet/img/Google-Cloud-Platform-grey.png";
 
 /***/ }),
 /* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "8c9d4258c29e89cb404881948ec3f7c5.png";
+module.exports = __webpack_require__.p + "src/stylesheet/img/partner-logos-grey-amazonaws.png";
 
 /***/ }),
 /* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "929e9ce48782abfd45043a78e3804384.png";
+module.exports = __webpack_require__.p + "src/stylesheet/img/reactjs-card.png";
 
 /***/ }),
 /* 589 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "5b173b7f5f012c20774588f918f35880.png";
+module.exports = __webpack_require__.p + "src/stylesheet/img/mobile.png";
 
 /***/ }),
 /* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e13d2e46e5de9034ece4bbf0246b8467.svg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/wave-bottom.svg";
 
 /***/ }),
 /* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "862f55a9bea5a5bbc9af963263467e40.svg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/server-less.svg";
 
 /***/ }),
 /* 592 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "5630d3bd872d0586add3d64c9e688095.svg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/cloud-computing.svg";
 
 /***/ }),
 /* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "b0e48af5354fcaaf6fd51e2e12acd212.svg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/database.svg";
 
 /***/ }),
 /* 594 */
@@ -80352,48 +80353,52 @@ var MainPage = exports.MainPage = function (_Component) {
                 }
             };
             // });
-            var card = document.querySelectorAll('.skewC');
-            card.forEach(function (item) {
-                var se = item.querySelector('.developer-card');
-                item.addEventListener('mousemove', function (event) {
+            //----------------- CARD SKEW, uncomment to turn on ------------------//
+            // const card = document.querySelectorAll('.skewC');
+            // card.forEach(item => {
+            //     var se = item.querySelector('.developer-card');
+            //     item.addEventListener('mousemove', event => {
 
-                    var w = item.offsetWidth;
-                    var h = item.offsetHeight;
-                    var posX = window.scrollX + item.getBoundingClientRect().left;
-                    var posY = window.scrollY + item.getBoundingClientRect().top;
-                    var mouseX = event.clientX - posX - w + 150;
-                    var mouseY = event.clientY - h;
-                    var steve = 0.005;
-                    console.log('posX: ' + posX + '\nposY: ' + posY + '\nw:' + w + '\nh:' + h + '\nclientY: ' + event.clientY + '\nclientX: ' + event.clientX + '\nmouseX: ' + mouseX + '\nmouseY: ' + mouseY);
-                    console.log(event.clientX + "*" + event.clientY);
-                    console.log(posX + "x" + posY);
-                    console.log("current:" + (-event.clientX + posX) + ":" + (-event.clientY + posY));
-                    if (mouseX <= 0 && mouseY <= 0) {
-                        var cX = -mouseX * steve;
-                        var cY = -mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + cX + 'deg, ' + cY + 'deg)';
-                        console.log('trans: ' + cX + ' ' + cY);
-                    } else if (mouseX >= 0 && mouseY <= 0) {
-                        var _cX = -mouseX * steve;
-                        var _cY = mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX + 'deg, ' + _cY + 'deg)';
-                        console.log('trans: ' + _cX + ' ' + _cY);
-                    } else if (mouseX <= 0 && mouseY >= 0) {
-                        var _cX2 = mouseX * steve;
-                        var _cY2 = -mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX2 + 'deg, ' + _cY2 + 'deg)';
-                        console.log('trans: ' + _cX2 + ' ' + _cY2);
-                    } else if (mouseX >= 0 && mouseY >= 0) {
-                        var _cX3 = mouseX * steve;
-                        var _cY3 = mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX3 + 'deg, ' + _cY3 + 'deg)';
-                        console.log('trans: ' + _cX3 + ' ' + _cY3);
-                    }
-                });
-                item.addEventListener('mouseout', function () {
-                    se.style.cssText = 'transform: skew(0deg, 0deg)';
-                });
-            });
+            //         let w = item.offsetWidth;
+            //         let h = item.offsetHeight;
+            //         let posX = window.scrollX + item.getBoundingClientRect().left;
+            //         let posY = window.scrollY + item.getBoundingClientRect().top;
+            //         var mouseX = event.clientX - posX - w + 150;
+            //         var mouseY = event.clientY - h;
+            //         var steve = 0.005;
+            //         console.log(`posX: ${posX}\nposY: ${posY}\nw:${w}\nh:${h}\nclientY: ${event.clientY}\nclientX: ${event.clientX}\nmouseX: ${mouseX}\nmouseY: ${mouseY}`);
+            //         console.log(event.clientX + "*" + event.clientY);
+            //         console.log(posX + "x" + posY);
+            //         console.log("current:" + (-event.clientX + posX) + ":" + (-event.clientY + posY));
+            //         if((mouseX <= 0) && (mouseY <= 0)) {
+            //             let cX = -((mouseX)) * steve;
+            //             let cY = -((mouseY)) * steve;
+            //             se.style.cssText += `transform: skew(${cX}deg, ${cY}deg)`;
+            //             console.log(`trans: ${cX} ${cY}`);
+            //         } else if ((mouseX >= 0) && (mouseY<= 0)) {
+            //             let cX = -((mouseX)) * steve;
+            //             let cY = ((mouseY)) * steve;
+            //             se.style.cssText += `transform: skew(${cX}deg, ${cY}deg)`;
+            //             console.log(`trans: ${cX} ${cY}`);
+
+            //         } else if ((mouseX <= 0) && (mouseY >= 0)) {
+            //             let cX = ((mouseX)) * steve;
+            //             let cY = -((mouseY)) * steve;
+            //             se.style.cssText += `transform: skew(${cX}deg, ${cY}deg)`;
+            //             console.log(`trans: ${cX} ${cY}`);
+
+            //         } else if ((mouseX >= 0) && (mouseY >= 0)) {
+            //             let cX = ((mouseX)) * steve;
+            //             let cY = ((mouseY)) * steve;
+            //             se.style.cssText += `transform: skew(${cX}deg, ${cY}deg)`;
+            //             console.log(`trans: ${cX} ${cY}`);
+
+            //         }
+            //     });
+            //     item.addEventListener('mouseout', () => {
+            //         se.style.cssText = `transform: skew(0deg, 0deg)`;
+            //     });
+            // })
         }
     }, {
         key: 'changeViewport',
@@ -80988,7 +80993,7 @@ var Whoops404 = exports.Whoops404 = function Whoops404() {
 /* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a47d5124e88532695ba37fcfa9b5cf19.png";
+module.exports = __webpack_require__.p + "src/stylesheet/img/sadgery.png";
 
 /***/ }),
 /* 604 */
@@ -83813,7 +83818,7 @@ exports.push([module.i, "@keyframes play180 {\n    0% {\n      background-positi
 /* 614 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e73c205ecbc366a6bd0de1fd008c8d01.svg";
+module.exports = __webpack_require__.p + "src/stylesheet/img/sprite_60fps.svg";
 
 /***/ }),
 /* 615 */

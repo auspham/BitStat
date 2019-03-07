@@ -5,9 +5,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
     entry: "./src/index.js",
     output: {
-        path: path.resolve(__dirname,'dist/assets'),
+        path: path.resolve(__dirname,'dist/assets/'),
         filename: "bundle.js",
-        publicPath: "assets"
+        publicPath: "assets/"
     },
 
     devServer: {
@@ -17,6 +17,7 @@ module.exports = {
 	disableHostCheck: true
     },
       
+
     module: {
         rules: [
             {
@@ -38,14 +39,12 @@ module.exports = {
             {
                 test: /\.(gif|png|jpe?g|svg|ico)$/i,
                 use: [
-                  'file-loader',
-                  {
-                    loader: 'image-webpack-loader',
-                    options: {
-                      bypassOnDebug: true, // webpack@1.x
-                      disable: true, // webpack@2.x and newer
+                    {
+                        loader: 'file-loader',
+                        options: {
+                           name: '[path][name].[ext]'
+                        }
                     },
-                  }
                 ],
             },
         ]
