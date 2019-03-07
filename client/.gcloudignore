@@ -7,10 +7,7 @@
 #   $ gcloud topic gcloudignore
 #
 .gcloudignore
-<<<<<<< HEAD
-=======
 apiconfig.sh
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 # If you would like to upload your .git directory, .gitignore file or files
 # from your .gitignore file, remove the corresponding line
 # below:

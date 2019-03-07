@@ -57,11 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-<<<<<<< HEAD
 /******/ 	__webpack_require__.p = "assets/";
-=======
-/******/ 	__webpack_require__.p = "assets";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 310);
@@ -45705,12 +45701,8 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
         value: function componentWillMount() {
             var _this3 = this;
 
-<<<<<<< HEAD
-            var apilink = "https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api";
+            var apilink = "REPLACE";
             fetch(apilink + "?beforeday=0").then(function (res) {
-=======
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=0").then(function (res) {
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45725,11 +45717,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
                 console.log(error);
             });
 
-<<<<<<< HEAD
             fetch(apilink + "?beforehour=0").then(function (res) {
-=======
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=0").then(function (res) {
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45744,11 +45732,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
                 console.log(error);
             });
 
-<<<<<<< HEAD
             fetch(apilink + "?weekly=0").then(function (res) {
-=======
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?weekly=0").then(function (res) {
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
                 return res.json();
             }).then(function (result) {
                 return _this3.setState({
@@ -45772,11 +45756,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
             this.setState({
                 load2: true
             });
-<<<<<<< HEAD
             fetch(apilink + "?beforehour=" + value).then(function (res) {
-=======
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforehour=" + value).then(function (res) {
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
                 return res.json();
             }).then(function (result) {
                 console.log("result");
@@ -45802,11 +45782,7 @@ var ViewDetails = exports.ViewDetails = function (_Component) {
             this.setState({
                 load1: true
             });
-<<<<<<< HEAD
             fetch(apilink + "?beforeday=" + value).then(function (res) {
-=======
-            fetch("https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api?beforeday=" + value).then(function (res) {
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
                 return res.json();
             }).then(function (result) {
                 console.log("result");
@@ -80144,91 +80120,55 @@ exports.push([module.i, "[data-sal]{-webkit-transition-delay:0s;transition-delay
 /* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/16440123.jpeg";
-=======
-module.exports = __webpack_require__.p + "e1bc50542543d9f1ae343a786293000a.jpeg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/Google-Cloud-Platform-grey.png";
-=======
-module.exports = __webpack_require__.p + "67ca8b463f187e64d5fe4c37108599e4.png";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/partner-logos-grey-amazonaws.png";
-=======
-module.exports = __webpack_require__.p + "8c9d4258c29e89cb404881948ec3f7c5.png";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/reactjs-card.png";
-=======
-module.exports = __webpack_require__.p + "929e9ce48782abfd45043a78e3804384.png";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 589 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/mobile.png";
-=======
-module.exports = __webpack_require__.p + "5b173b7f5f012c20774588f918f35880.png";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/wave-bottom.svg";
-=======
-module.exports = __webpack_require__.p + "e13d2e46e5de9034ece4bbf0246b8467.svg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/server-less.svg";
-=======
-module.exports = __webpack_require__.p + "862f55a9bea5a5bbc9af963263467e40.svg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 592 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/cloud-computing.svg";
-=======
-module.exports = __webpack_require__.p + "5630d3bd872d0586add3d64c9e688095.svg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/database.svg";
-=======
-module.exports = __webpack_require__.p + "b0e48af5354fcaaf6fd51e2e12acd212.svg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 594 */
@@ -80413,7 +80353,6 @@ var MainPage = exports.MainPage = function (_Component) {
                 }
             };
             // });
-<<<<<<< HEAD
             //----------------- CARD SKEW, uncomment to turn on ------------------//
             // const card = document.querySelectorAll('.skewC');
             // card.forEach(item => {
@@ -80460,50 +80399,6 @@ var MainPage = exports.MainPage = function (_Component) {
             //         se.style.cssText = `transform: skew(0deg, 0deg)`;
             //     });
             // })
-=======
-            var card = document.querySelectorAll('.skewC');
-            card.forEach(function (item) {
-                var se = item.querySelector('.developer-card');
-                item.addEventListener('mousemove', function (event) {
-
-                    var w = item.offsetWidth;
-                    var h = item.offsetHeight;
-                    var posX = window.scrollX + item.getBoundingClientRect().left;
-                    var posY = window.scrollY + item.getBoundingClientRect().top;
-                    var mouseX = event.clientX - posX - w + 150;
-                    var mouseY = event.clientY - h;
-                    var steve = 0.005;
-                    console.log('posX: ' + posX + '\nposY: ' + posY + '\nw:' + w + '\nh:' + h + '\nclientY: ' + event.clientY + '\nclientX: ' + event.clientX + '\nmouseX: ' + mouseX + '\nmouseY: ' + mouseY);
-                    console.log(event.clientX + "*" + event.clientY);
-                    console.log(posX + "x" + posY);
-                    console.log("current:" + (-event.clientX + posX) + ":" + (-event.clientY + posY));
-                    if (mouseX <= 0 && mouseY <= 0) {
-                        var cX = -mouseX * steve;
-                        var cY = -mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + cX + 'deg, ' + cY + 'deg)';
-                        console.log('trans: ' + cX + ' ' + cY);
-                    } else if (mouseX >= 0 && mouseY <= 0) {
-                        var _cX = -mouseX * steve;
-                        var _cY = mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX + 'deg, ' + _cY + 'deg)';
-                        console.log('trans: ' + _cX + ' ' + _cY);
-                    } else if (mouseX <= 0 && mouseY >= 0) {
-                        var _cX2 = mouseX * steve;
-                        var _cY2 = -mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX2 + 'deg, ' + _cY2 + 'deg)';
-                        console.log('trans: ' + _cX2 + ' ' + _cY2);
-                    } else if (mouseX >= 0 && mouseY >= 0) {
-                        var _cX3 = mouseX * steve;
-                        var _cY3 = mouseY * steve;
-                        se.style.cssText += 'transform: skew(' + _cX3 + 'deg, ' + _cY3 + 'deg)';
-                        console.log('trans: ' + _cX3 + ' ' + _cY3);
-                    }
-                });
-                item.addEventListener('mouseout', function () {
-                    se.style.cssText = 'transform: skew(0deg, 0deg)';
-                });
-            });
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
         }
     }, {
         key: 'changeViewport',
@@ -81098,11 +80993,7 @@ var Whoops404 = exports.Whoops404 = function Whoops404() {
 /* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/sadgery.png";
-=======
-module.exports = __webpack_require__.p + "a47d5124e88532695ba37fcfa9b5cf19.png";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 604 */
@@ -83822,7 +83713,7 @@ var Menu = exports.Menu = function (_Component) {
                     'nav',
                     { className: 'navbar fixed-top navbar-expand-lg navbar-dark' },
                     _react2.default.createElement(_reactGithubCorner2.default, {
-                        href: 'https://github.com/rockmanvnx6/cloudcomp18',
+                        href: 'https://github.com/rockmanvnx6/BitStat',
                         bannerColor: '#706fd3',
                         octoColor: '#fff',
                         size: 80,
@@ -83927,11 +83818,7 @@ exports.push([module.i, "@keyframes play180 {\n    0% {\n      background-positi
 /* 614 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 module.exports = __webpack_require__.p + "src/stylesheet/img/sprite_60fps.svg";
-=======
-module.exports = __webpack_require__.p + "e73c205ecbc366a6bd0de1fd008c8d01.svg";
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 
 /***/ }),
 /* 615 */

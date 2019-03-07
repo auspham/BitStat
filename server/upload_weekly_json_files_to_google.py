@@ -7,11 +7,7 @@ from datetime import datetime,timedelta, date
 import shutil
 import os
 
-<<<<<<< HEAD
-bucket_name = 'cloud_computing_assign2_bucket_1'
-=======
 bucket_name = 'REPLACE'
->>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c
 storage_client = storage.Client()
 bucket = storage_client.get_bucket(bucket_name)
 
