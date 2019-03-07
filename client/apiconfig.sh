@@ -8,7 +8,7 @@ echo "Please enter the link of your API in full:"
 
 read apilink
 
-replacestr="s/REPLACE/$apilink/g"
+replacestr="s@REPLACE@$apilink@g"
 sed -i $replacestr src/components/ViewDetails.js
 
 echo "Successfully configured API link to work with client side."
