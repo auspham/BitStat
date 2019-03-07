@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CronTab Script by Jia Jun Yong, 2018
 #
 # GOAL: Schedule fetching and data generating tasks
@@ -5,3 +6,8 @@
 0,15,30,45 * * * * cd /home/ec2-user/cloud-computing-assignment2 && /home/ec2-user/softwares/python3.7/bin/python3 /home/ec2-user/cloud-computing-assignment2/get_data_from_bitcoin_15mins.py >> /home/ec2-user/cloud-computing-assignment2/get_data_from_bitcoin_15mins.log && cd /home/ec2-user/cloud-computing-assignment2 && /home/ec2-user/softwares/python3.7/bin/python3 /home/ec2-user/cloud-computing-assignment2/generate_hourly_json_file.py >> /home/ec2-user/cloud-computing-assignment2/hourly_json.log && /home/ec2-user/cloud-computing-assignment2/upload_files_to_google_hourly.sh && cd /home/ec2-user/cloud-computing-assignment2 && /home/ec2-user/softwares/python3.7/bin/python3 /home/ec2-user/cloud-computing-assignment2/generate_last_15mins_json_file.py >> /home/ec2-user/cloud-computing-assignment2/generate_before_15mins.log && /home/ec2-user/cloud-computing-assignment2/upload_files_to_google_last15.sh
 0 */1 * * * cd /home/ec2-user/cloud-computing-assignment2 && cd /home/ec2-user/cloud-computing-assignment2 && /home/ec2-user/softwares/python3.7/bin/python3 /home/ec2-user/cloud-computing-assignment2/generate_daily_json_file.py >> /home/ec2-user/cloud-computing-assignment2/daily_json.log && /home/ec2-user/cloud-computing-assignment2/upload_files_to_google_daily.sh
 0 0 * * * cd /home/ec2-user/cloud-computing-assignment2 && /home/ec2-user/softwares/python3.7/bin/python3 /home/ec2-user/cloud-computing-assignment2/generate_weekly_json_file.py >> /home/ec2-user/cloud-computing-assignment2/weekly_json.log && /home/ec2-user/cloud-computing-assignment2/upload_files_to_google_weekly.sh
+=======
+0,15,30,45 * * * * cd REPLACE && PYTHON REPLACE/get_data_from_bitcoin_15mins.py >> REPLACE/get_data_from_bitcoin_15mins.log && cd REPLACE && PYTHON REPLACE/generate_hourly_json_file.py >> REPLACE/hourly_json.log && REPLACE/upload_files_to_google_hourly.sh && cd REPLACE && PYTHON REPLACE/generate_last_15mins_json_file.py >> REPLACE/generate_before_15mins.log && REPLACE/upload_files_to_google_last15.sh
+0 */1 * * * cd REPLACE && cd REPLACE && PYTHON REPLACE/generate_daily_json_file.py >> REPLACE/daily_json.log && REPLACE/upload_files_to_google_daily.sh
+0 0 * * * cd REPLACE && PYTHON REPLACE/generate_weekly_json_file.py >> REPLACE/weekly_json.log && REPLACE/upload_files_to_google_weekly.sh
+>>>>>>> 88bdaeddffa2b91d27f92822735d735ce617b73c

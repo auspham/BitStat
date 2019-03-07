@@ -184,7 +184,7 @@ export class ViewDetails extends Component {
 
     componentWillMount() {
         
-        var apilink = "https://asia-northeast1-s3688090-cc2018.cloudfunctions.net/cool-api"
+        var apilink = "REPLACE"
         fetch(apilink + "?beforeday=0")
         .then(res=>res.json())
         .then(result => this.setState({

@@ -17,7 +17,6 @@ module.exports = {
 	disableHostCheck: true
     },
       
-
     module: {
         rules: [
             {
