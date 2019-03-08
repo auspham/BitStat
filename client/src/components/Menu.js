@@ -11,7 +11,7 @@ export class Menu extends Component{
             <div className="menu">
                 <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
                         <GithubCorner
-                    href="https://github.com/rockmanvnx6/cloudcomp18"
+                    href="https://github.com/rockmanvnx6/BitStat"
                     bannerColor="#706fd3"
                     octoColor="#fff"
                     size={80}
