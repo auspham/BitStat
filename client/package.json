@@ -1,22 +1,22 @@
 {
-  "name": "cloudcomp18",
-  "version": "1.0.0",
+  "name": "BitStat",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "npm install && ./node_modules/.bin/webpack-dev-server --host 0.0.0.0"
+    "start": "NODE_ENV=development npm install && ./node_modules/.bin/webpack-dev-server --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rockmanvnx6/cloudcomp18.git"
+    "url": "git+https://github.com/rockmanvnx6/BitStat.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rockmanvnx6/cloudcomp18/issues"
+    "url": "https://github.com/rockmanvnx6/BitStat/issues"
   },
-  "homepage": "https://github.com/rockmanvnx6/cloudcomp18#readme",
+  "homepage": "https://github.com/rockmanvnx6/BitStat#readme",
   "devDependencies": {},
   "dependencies": {
     "copy-webpack-plugin": "^4.5.2",

@@ -6,9 +6,11 @@ BitStat
   The Ultimate Open Source BitCoin Conversion Rates Timeline Visualisation
 </h1>
 <p align="center">
-<img src="https://img.shields.io/badge/%E2%9C%94%20Code%20Quality-A-green.svg">
-<img src="https://img.shields.io/badge/Mobile%20Compatibility-A-red.svg">
-<img src="https://img.shields.io/badge/License-MIT-blue.svg">
+  <a href="#"><img src="https://img.shields.io/badge/%E2%9C%94%20Code%20Quality-A-green.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Mobile%20Compatibility-A-red.svg"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+  <a href="https://bitstat-7d80c.firebaseapp.com/" target="_blank"><img src="https://img.shields.io/badge/Preview-Live-green.svg"></a>
+
 </p>
 
 
@@ -106,6 +108,7 @@ npm run build && npm run start
 > By default, the app will run at *http://0.0.0.0:8080*
 
 <hr />
+
 
 ## Technologies
 <code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Amazon EC2</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>, `Google Cloud Function`, <code>crontab</code>, <code>JSON</code>
