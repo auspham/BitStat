@@ -1,4 +1,4 @@
-# Script for back-end by Wei Wei Chen, 2018
+# Script for back-end by Wei Wei Wen, 2018
 #
 # GOAL: To fetch data from Bitcoin API (15 mins)
 
