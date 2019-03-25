@@ -10,6 +10,8 @@ BitStat
   <a href="#"><img src="https://img.shields.io/badge/Mobile%20Compatibility-A-red.svg"></a>
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
   <a href="https://bitstat-7d80c.firebaseapp.com/" target="_blank"><img src="https://img.shields.io/badge/Preview-Live-green.svg"></a>
+
+
 Live preview here: https://bitstat-7d80c.firebaseapp.com/
 
 
