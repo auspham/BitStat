@@ -1,4 +1,4 @@
-# Script by Wei Wei Chen & Jia Jun Yong, 2018
+# Script by Wei Wei Wen & Jia Jun Yong, 2018
 #
 # GOAL: To upload last 15 mins JSON files to Google Cloud Storage
 

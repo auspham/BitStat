@@ -1,4 +1,4 @@
-# Script for back-end by Wei Wei Chen, 2018
+# Script for back-end by Wei Wei Wen, 2018
 #
 # GOAL: To generate mean of datapoints from latest fetched data (15 mins)
 
