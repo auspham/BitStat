@@ -115,6 +115,6 @@ npm run build && npm run start
 <code>React.js</code>, <code>Chart.js</code>, <code>Bootstrap</code>, <code>Python</code>, <code>Amazon EC2</code>, <code>Google Cloud Storage</code>, <code>Google App Engine</code>, `Google Cloud Function`, <code>crontab</code>, <code>JSON</code>
 
 ## Team
-- Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6) - For front-end/client
-- Jia Jun Yong [@yongjiajun](https://github.com/yongjiajun) - For API/back-end
-- Wei Wei Wen [@weiweiwen](https://github.com/weiweiwen) - For back-end
+- Austin Pham [@rockmanvnx6](https://github.com/rockmanvnx6) 
+- Jia Jun Yong [@yongjiajun](https://github.com/yongjiajun) 
+- Wei Wei Wen [@weiweiwen](https://github.com/weiweiwen) 
