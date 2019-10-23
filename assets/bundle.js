@@ -50221,12 +50221,12 @@ __webpack_require__(618);
 __webpack_require__(309);
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRouter.Router,
-    { history: _reactRouter.hashHistory },
+    { basename: process.env.PUBLIC_URL },
     _react2.default.createElement(_reactRouter.Route, { path: '*', component: _Menu.Menu })
 ), document.querySelector("header"));
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRouter.Router,
-    { history: _reactRouter.hashHistory, basename: process.env.PUBLIC_URL },
+    { basename: process.env.PUBLIC_URL },
     _react2.default.createElement(_reactRouter.Route, { path: '/test', component: _Connectdot.Connectdot }),
     _react2.default.createElement(_reactRouter.Route, { path: '/', component: _App.App }),
     _react2.default.createElement(_reactRouter.Route, { path: '/details/:currency', component: _App.App }),
