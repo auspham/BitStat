@@ -4,6 +4,8 @@ import '../stylesheet/viewdetails.css';
 import { Icon } from 'react-icons-kit'
 import {refresh} from 'react-icons-kit/fa/refresh'
 import { database } from 'react-icons-kit/fa/database';
+import $ from "jquery";
+var apilink = "REPLACE"
 
 export class ViewDetails extends Component {
     constructor(props) {
@@ -184,7 +186,6 @@ export class ViewDetails extends Component {
 
     componentWillMount() {
         
-        var apilink = "REPLACE"
         fetch(apilink + "?beforeday=0")
         .then(res=>res.json())
         .then(result => this.setState({

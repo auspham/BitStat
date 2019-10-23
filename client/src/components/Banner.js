@@ -6,6 +6,8 @@ import {minus} from 'react-icons-kit/fa/minus'
 import { BannerChart } from '../components/BannerChart'
 import ReactDom from 'react-dom'
 import { Connectdot } from '../components/Connectdot'
+import $ from "jquery";
+
 export class Banner extends Component{
     constructor(props)  {
         super(props);

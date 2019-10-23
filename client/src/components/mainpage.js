@@ -13,6 +13,7 @@ import {eur} from 'react-icons-kit/fa/eur'
 import {chevronLeft} from 'react-icons-kit/fa/chevronLeft'
 import {chevronRight} from 'react-icons-kit/fa/chevronRight'
 import sal from 'sal.js'
+import $ from "jquery";
 
 export class MainPage extends Component {
     constructor() {

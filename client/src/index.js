@@ -16,13 +16,13 @@ import { Banner } from './components/Banner';
 require('intersection-observer');
 require('bootstrap')
 render(
-    <Router history={hashHistory}>
+    <Router history={hashHistory} basename={process.env.PUBLIC_URL}>
         <Route path="*" component= { Menu }/> 
     </Router>,
     document.querySelector("header")
 )
 render(
-    <Router history={hashHistory}>
+    <Router history={hashHistory} basename={process.env.PUBLIC_URL}>
         <Route path="/test" component={ Connectdot }/>
         <Route path="/" component={ App }/> 
         <Route path="/details/:currency" component={App}/>
