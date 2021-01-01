@@ -7,10 +7,10 @@ BitStat
 </h1>
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-  <a href="https://austinph.me/BitStat/" target="_blank"><img src="https://img.shields.io/badge/Preview-Live-green.svg"></a>
+  <a href="https://auspham.dev/BitStat/" target="_blank"><img src="https://img.shields.io/badge/Preview-Live-green.svg"></a>
 
 
-Live preview here: https://austinph.me/BitStat/
+Live preview here: https://auspham.dev/BitStat/
 
 
 ## Description
